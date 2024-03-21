@@ -2,6 +2,8 @@ To run and start the server, follow these steps:
 1. Clone the repository from GitHub:
    git clone git@github.com:maximmajor/user-management-module-backend-node.git
 
+   BaseUrl = http://localhost:3000
+
 3. run yarn (to Install dependencies)
 
 4. Set environment variables:
