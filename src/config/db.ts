@@ -9,7 +9,7 @@ interface CustomConnectOptions extends ConnectOptions {
 }
 export const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI! || 'mongodb+srv://koyonation:Oyok1234567oyoK@cluster0.tv7vs.mongodb.net/fulfil-v1?retryWrites=true&w=majority', {
+    await mongoose.connect(process.env.MONGO_URI!, {
     } as CustomConnectOptions);
     console.log('Connected to database');
   } catch (error: any) {
