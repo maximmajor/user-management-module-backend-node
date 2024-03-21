@@ -12,7 +12,9 @@ function createServer() {
     app.use(bodyParser.urlencoded({ extended: true }));
 
     // use middlewares
-    app.use(cors());
+    app.use(cors({
+        origin: 'http://localhost:4200'
+    }));
     app.use(morgan('tiny'));
     app.use(bodyParser.json());
 

@@ -5,14 +5,12 @@ const userSchema = new mongoose.Schema<IUser>(
         first_name: {
             type: String,
             required: true,
-            unique: true,
             trim: true,
         },
         last_name: {
             type: String,
             required: true,
             trim: true,
-            unique: true,
         },
         email: {
             type: String,
@@ -24,13 +22,11 @@ const userSchema = new mongoose.Schema<IUser>(
             type: String,
             required: true,
             trim: true,
-            unique: true,
         },
         phone_number: {
             type: String,
             required: true,
             trim: true,
-            unique: true,
         },
         date_of_birth: {
             type: String,
