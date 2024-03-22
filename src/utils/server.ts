@@ -2,8 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import bodyParser from 'body-parser';
-import { errorHandler, notFoundHandler } from '../modules/company/middlewares/errorHandlers';
-import UserRoutes from '../modules/company/routes/userRoute'
+import { errorHandler, notFoundHandler } from '../modules/middlewares/errorHandlers';
+import UserRoutes from '../modules/routes/userRoute'
 // import fixtureRoute from '../routes/fixtureRoute';
 
 function createServer() {
